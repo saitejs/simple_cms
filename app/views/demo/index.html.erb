@@ -1,0 +1,11 @@
+<h1>Demo#index</h1>
+<p>hello saitej singh</p>
+
+<a href="/demo/hello">go to hello page by html format</a><br />
+
+<%=link_to "go to hello by ebr", {:action => 'hello'} %><br />
+<%= link_to('hello with params', {:action => 'hello',:id => 10, :page => 2})%><br />
+ 
+<%= link_to('Roar','#', :onclick => "jsRoar('javascript'); return true;")%><br />
+ 
+<%= javascript_tag("jsRoar('Rails');") %>

@@ -1,0 +1,16 @@
+<%= link_to("<<back to last", {:action =>'index'}, :class => 'back-link')%>
+
+<div class ="subject show ">
+<h2>create Subject</h2>
+<%= form_for(:subject, :url => {:action =>'create'}) do |f|%>
+
+<%= render(:partial => "form",:locals => {:f => f}) %>
+<div class ="from-buttons">
+<%= submit_tag("Create Subject")%>
+</div>
+
+<div class ="from-buttons">
+<%= submit_tag("exit")%>
+</div>
+<%end%>
+</div>

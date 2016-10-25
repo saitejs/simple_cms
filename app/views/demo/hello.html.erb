@@ -1,0 +1,28 @@
+<h1>Demo#Hello</h1>
+<p>hello gursikh saitej singh</p>
+ 
+ <%= 1+1 %>
+ <br />
+ <%temp="wahegure"%>
+ <%="#{temp} ji ka khalasa #{temp} ji ki fateh"%>
+
+ <br />
+
+<%3.times do %>
+<%= "waheguru" %><br />
+<%end%>
+
+<%@array.each do |n| %>
+<%= n %>
+<%end%><br />
+
+<a href="/demo/index">go back to index webpage 1 by html format</a><br />
+
+<%= link_to('go back to index page by ebr', {:action => 'index'})%><br />
+
+ID : <%= params[:id]%><br />
+PAGE : <%= params[:page]%>
+<hr />
+
+<%= params.inspect%>
+

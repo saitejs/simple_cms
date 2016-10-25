@@ -1,0 +1,17 @@
+<%= link_to("<<back to last", {:action =>'index'}, :class => 'back-link')%>
+
+<div class ="subject edit ">
+<h2>update Subject</h2>
+<%= form_for(:subject, :url => {:action =>'update',:id => @subject.id}) do |f|%>
+
+<%= render(:partial => "form", :locals => {:f => f}) %>
+
+<div class ="from-buttons">
+<%= submit_tag("Update Subject")%>
+</div>
+
+<div class ="from-buttons">
+<%= submit_tag("exit")%>
+</div>
+<%end%>
+</div>
